@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var viewModel = WebViewStateModel()
     @State private var showWebView = false
     private let urlString: String = "https://www.google.com"
     
     var body: some View {
-        WebView(url: URL(string: urlString)!)
+        WebView(webViewStateModel: viewModel)
             .cornerRadius(15)
             .shadow(color: .black.opacity(0.2), radius: 5.0, x: 0, y: 0)
             .padding()
