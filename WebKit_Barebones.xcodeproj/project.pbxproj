@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26B5C3C92897A00400D3AD04 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B5C3C82897A00400D3AD04 /* WebView.swift */; };
 		26BF64B62897977D009FEC3E /* WebKit_BarebonesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BF64B52897977D009FEC3E /* WebKit_BarebonesApp.swift */; };
 		26BF64B82897977D009FEC3E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BF64B72897977D009FEC3E /* ContentView.swift */; };
 		26BF64BA28979780009FEC3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26BF64B928979780009FEC3E /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		26B5C3C82897A00400D3AD04 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		26BF64B22897977D009FEC3E /* WebKit_Barebones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebKit_Barebones.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26BF64B52897977D009FEC3E /* WebKit_BarebonesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebKit_BarebonesApp.swift; sourceTree = "<group>"; };
 		26BF64B72897977D009FEC3E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +34,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26B5C3C728979FF700D3AD04 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				26BF64B72897977D009FEC3E /* ContentView.swift */,
+				26B5C3C82897A00400D3AD04 /* WebView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		26BF64A92897977D009FEC3E = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +62,8 @@
 		26BF64B42897977D009FEC3E /* WebKit_Barebones */ = {
 			isa = PBXGroup;
 			children = (
+				26B5C3C728979FF700D3AD04 /* View */,
 				26BF64B52897977D009FEC3E /* WebKit_BarebonesApp.swift */,
-				26BF64B72897977D009FEC3E /* ContentView.swift */,
 				26BF64B928979780009FEC3E /* Assets.xcassets */,
 				26BF64BB28979780009FEC3E /* Preview Content */,
 			);
@@ -137,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26B5C3C92897A00400D3AD04 /* WebView.swift in Sources */,
 				26BF64B82897977D009FEC3E /* ContentView.swift in Sources */,
 				26BF64B62897977D009FEC3E /* WebKit_BarebonesApp.swift in Sources */,
 			);
