@@ -26,6 +26,7 @@ struct ContentView: View {
                 Button("검색") {
                     viewModel.pageURLString = webAddress
                     viewModel.goToPage = true
+                    hideKeyboard()
                 }
             }
             .padding(.horizontal).padding(.top)
