@@ -17,7 +17,7 @@ struct WebView: UIViewRepresentable {
     
     // 뷰 객체 생성, 초기 상태 구성. 딱 한 번만 호출됨.
     func makeUIView(context: Context) -> WKWebView {
-        let view = WKWebView(frame: CGRect.zero)
+        let view = WKWebView()
         view.navigationDelegate = context.coordinator
         view.allowsBackForwardNavigationGestures = true
         view.scrollView.isScrollEnabled = true

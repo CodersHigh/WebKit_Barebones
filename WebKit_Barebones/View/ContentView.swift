@@ -28,11 +28,28 @@ struct ContentView: View {
                     viewModel.goToPage = true
                 }
             }
-            .padding()
+            .padding(.horizontal).padding(.top)
             WebView(webViewStateModel: viewModel)
                 .cornerRadius(15)
                 .shadow(color: .black.opacity(0.2), radius: 5.0, x: 0, y: 0)
-                .padding()
+                .padding(.horizontal).padding(.bottom)
+        }
+        .toolbar {
+            ToolbarItem(placement: .bottomBar) {
+                HStack {
+                    Button {
+                        viewModel.goBack = true
+                    } label: {
+                        Image(systemName: "arrow.backward")
+                    }
+                    Button {
+                        viewModel.goForward = true
+                    } label: {
+                        Image(systemName: "arrow.forward")
+                    }
+                }
+                .padding(.bottom, 5)
+            }
         }
     }
     
