@@ -8,9 +8,12 @@
 import Foundation
 
 class WebViewStateModel: ObservableObject {
+    
     @Published var pageURLString: String = "https://goole.com"
     @Published var goToPage: Bool = false
     
     @Published var goBack: Bool = false
     @Published var goForward: Bool = false
+    @Published var reload: Bool = false
+    
 }

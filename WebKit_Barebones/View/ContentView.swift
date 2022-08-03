@@ -13,6 +13,7 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
+            // 검색 바
             HStack {
                 HStack {
                     Image(systemName: "magnifyingglass")
@@ -30,20 +31,29 @@ struct ContentView: View {
                 }
             }
             .padding(.horizontal).padding(.top)
-            WebView(webViewStateModel: viewModel)
+            // 웹 뷰
+            WebView(viewModel: viewModel)
                 .cornerRadius(15)
                 .shadow(color: .black.opacity(0.2), radius: 5.0, x: 0, y: 0)
                 .padding(.horizontal).padding(.bottom)
         }
         .toolbar {
+            // Bottom Bar
             ToolbarItem(placement: .bottomBar) {
                 HStack {
-                    Button {
+                    Button {  // 뒤로 가기 버튼
                         viewModel.goBack = true
                     } label: {
                         Image(systemName: "arrow.backward")
                     }
-                    Button {
+                    Spacer()
+                    Button {  // 새로고침 버튼
+                        viewModel.reload = true
+                    } label: {
+                        Image(systemName: "arrow.clockwise")
+                    }
+                    Spacer()
+                    Button {  // 앞으로 가기 버튼
                         viewModel.goForward = true
                     } label: {
                         Image(systemName: "arrow.forward")
